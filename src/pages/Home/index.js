@@ -2,6 +2,7 @@ import React from 'react';
 import { FlatList } from 'react-native';
 
 import api from '../../services/api';
+import { formatPrice } from '../../utils/format';
 import {
   Container,
   ProductCard,
@@ -23,7 +24,7 @@ export default class Home extends React.Component {
     <ProductCard key={product.id.toString()}>
       <ProductImage source={{ uri: product.image }} />
       <ProductTitle>{product.title}</ProductTitle>
-      <ProductPrice>{product.price}</ProductPrice>
+      <ProductPrice>{formatPrice(product.price)}</ProductPrice>
     </ProductCard>
   );
 
