@@ -150,3 +150,7 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+
+// React Native Vector Icons
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
