@@ -1,7 +1,9 @@
 import styled from 'styled-components/native';
 import { darken } from 'polished';
 
-export const Container = styled.View``;
+export const Container = styled.View`
+  background-color: #193034;
+`;
 
 export const ProductCard = styled.View`
   background: #f6f6fa;
